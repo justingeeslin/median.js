@@ -24,8 +24,8 @@ xdescribe('Mean', function() {
 
 describe('Median', function() {
 
-  beforeAll(function() {
-
+  beforeEach(function() {
+    cost = 0;
   })
 
   it('should be correct on Z4', function() {
@@ -42,8 +42,8 @@ describe('Median', function() {
 
 describe('Mode', function() {
 
-  beforeAll(function() {
-
+  beforeEach(function() {
+    cost = 0;
   })
 
   it('should be correct for an array of all zeros', function() {
