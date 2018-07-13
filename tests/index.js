@@ -28,8 +28,9 @@ describe('Median', function() {
 
     expect(theArray.getMedian()).toBe(theArray[2])
 
-    // Constant time
-    // expect(theArray.cost).toBe(theArray.length + 1);
+    // Should be linear but not exactly n.
+    console.log('Getting median sorted by treesort cost is', cost);
+    expect(cost).toBeGreaterThanOrEqual(theArray.length + 1);
   })
 
 })
