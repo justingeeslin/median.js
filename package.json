@@ -1,7 +1,7 @@
 {
-  "name": "every",
+  "name": "median.js",
   "version": "1.0.0",
-  "description": "The starting point for projects.",
+  "description": "Array extensions in JavaScript for calculating mean, median, and mode",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start"
