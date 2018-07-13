@@ -1,6 +1,6 @@
 cost = 0;
 
-xdescribe('Mean', function() {
+describe('Mean', function() {
 
   beforeEach(function() {
     cost = 0;
