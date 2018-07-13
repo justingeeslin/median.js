@@ -1,15 +1,10 @@
-// Input size
-Array.prototype.n = 0;
-// Cost
-Array.prototype.cost = 0;
-
 Array.prototype.getMedian = function() {
   var sortedSelf = Object.values(this);
   // What is the cost of this sort? Maybe I should implement my own so that I can measure cost. Without this, it looks like its constant time.
   sortedSelf.sort();
 
   // Select the middle element
-  this.cost++;
+  cost++;
   var i = Math.floor(sortedSelf.length / 2);
 
   return sortedSelf[i];
@@ -24,7 +19,7 @@ Array.prototype.getMode = function() {
   var count = 0;
   // Find the longest run of idential elements
   for(var i=1;i < this.length;i++) {
-    this.cost++;
+    cost++;
     if (this[i] == this[i-1]) {
       // Identical elements, up the count
       count++;
@@ -43,7 +38,7 @@ Array.prototype.getMode = function() {
 Array.prototype.sum = function() {
   var sum = 0;
   for(var i=0;i < this.length;i++) {
-    this.cost++;
+    cost++;
     sum += this[i];
   }
   return sum;
@@ -54,6 +49,6 @@ Array.prototype.getMean = function() {
   var sum = this.sum();
 
   // then divide by the number of elements
-  this.cost++;
+  cost++;
   return sum / this.length;
 }

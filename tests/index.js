@@ -1,3 +1,5 @@
+cost = 0;
+
 describe('Mean', function() {
 
   beforeAll(function() {
@@ -10,7 +12,7 @@ describe('Mean', function() {
     expect(theArray.getMean()).toBe(6/theArray.length)
 
     // Constant time
-    expect(theArray.cost).toBe(theArray.length + 1);
+    expect(cost).toBe(theArray.length + 1);
   })
 
 })
