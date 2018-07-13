@@ -1,3 +1,5 @@
+require('array-sorts');
+
 Array.prototype.getMedian = function() {
   var sortedSelf = Object.values(this);
   // What is the cost of this sort? Maybe I should implement my own so that I can measure cost. Without this, it looks like its constant time.

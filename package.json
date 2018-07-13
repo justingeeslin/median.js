@@ -9,6 +9,7 @@
   "author": "Justin Geeslin",
   "license": "ISC",
   "dependencies": {
+    "array-sorts": "git+https://github.com/justingeeslin/array-sorts.git",
     "extend": "git+https://github.com/justingeeslin/extend.git",
     "fractional": "^1.0.0",
     "mathjs": "^4.0.0",
