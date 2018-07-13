@@ -51,8 +51,8 @@ describe('Mode', function() {
 
     expect(theArray.getMode()).toBe(0)
 
-    // Constant time
-    // expect(theArray.cost).toBe(theArray.length + 1);
+    console.log('Getting Mode sorted by treesort cost is', cost);
+    expect(cost).toBeGreaterThanOrEqual(theArray.length);
   })
 
   it('should be correct Z4 with additional 3\'s added.', function() {
@@ -60,8 +60,6 @@ describe('Mode', function() {
 
     expect(theArray.getMode()).toBe(3)
 
-    // Constant time
-    // expect(theArray.cost).toBe(theArray.length + 1);
   })
 
 })
