@@ -12,7 +12,7 @@ Array.prototype.getMedian = function() {
 
 Array.prototype.getMode = function() {
   var sortedSelf = Object.values(this);
-  sortedSelf.sort();
+  sortedSelf.treeSort();
 
   var modeSoFar;
   var modeOccurancesSoFar = 0;
